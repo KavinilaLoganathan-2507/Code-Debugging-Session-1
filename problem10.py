@@ -2,7 +2,7 @@
 
 import string
 
-def word_frequency(sentence):
+def word_freq(sentence):
     translator = str.maketrans('', '', string.punctuation)
     sentence = sentence.translate(translator).lower()
     words = sentence.split()
@@ -14,4 +14,4 @@ def word_frequency(sentence):
             freq[word] += 1
     return freq
 
-print(word_frequency("Hello, hello! How are you? Are you fine?"))
+print(word_frequency("hello, hello! How are you? Are you fine?"))
